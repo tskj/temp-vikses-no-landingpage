@@ -8,12 +8,15 @@
       * {
         box-sizing: border-box;
       }
+      html {
+        height: 100vh;
+      }
       body {
+        height: 100vh;
         margin: 0;
         color: white;
         font-family: "Josefin Sans", sans-serif;
         position: relative;
-        background-color: #e4f7dc;
       }
 
       .regular-font {
@@ -27,6 +30,7 @@
         font-size: 50px;
         width: 100%;
         padding: 30px;
+        height: 110px;
       }
 
       .center {
@@ -42,11 +46,14 @@
 
       .cards {
         position: relative;
+        height: calc(100% - 110px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
 
       .card {
-        position: relative;
-        padding-bottom: 250px;
+        padding-bottom: 80px;
         padding-right: 50px;
         padding-left: 50px;
       }
@@ -60,19 +67,12 @@
       .two {
         background-color: white;
         color: black;
-        top: -200px;
-        /*
-        background-color: green;
-        border-top-left-radius: 100px;
-        */
       }
 
       .three {
-        top: -300px;
         background-color: #e4f7dc;
         border-top-left-radius: 100px;
         border-top-right-radius: 100px;
-        padding-bottom: 80px;
         color: #14401f;
       }
 
@@ -84,6 +84,7 @@
       Vikses
     </div>
     <div class="cards">
+      <div>
       <div class="regular-font center card one">
         <div>
           Vikses Spiseri og Kafe åpner i midten av juli!
@@ -93,6 +94,7 @@
         <div>
           Vi lager all maten på stedet, av gode, naturlige råvarer. Vi har digg og sunn mat, og rågod kaffe.
         </div>
+      </div>
       </div>
       <div class="regular-font center card three">
         <div>
