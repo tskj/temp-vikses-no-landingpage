@@ -10,7 +10,10 @@
       }
       body {
         margin: 0;
+        color: white;
         font-family: "Josefin Sans", sans-serif;
+        position: relative;
+        background-color: #CBF7B8;
       }
 
       .regular-font {
@@ -19,7 +22,6 @@
       }
 
       .header {
-        color: white;
         background-color: #1B3644;
         font-weight: bold;
         font-size: 50px;
@@ -31,11 +33,45 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 100px;
+        padding-top: 50px;
       }
 
       .center div {
-        max-width: fit-content;
+        width: fit-content;
+      }
+
+      .cards {
+        position: relative;
+      }
+
+      .card {
+        position: relative;
+        padding-bottom: 250px;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+
+      .one {
+        padding-top: 100px;
+        background-color: #ad7e5e;
+      }
+
+      .two {
+        background-color: #ad7e5e;
+        top: -200px;
+        /*
+        background-color: green;
+        border-top-left-radius: 100px;
+        */
+      }
+
+      .three {
+        top: -300px;
+        background-color: #CBF7B8;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        padding-bottom: 80px;
+        color: #14401f;
       }
 
     </style>
@@ -45,19 +81,21 @@
     <div class="header">
       Vikses
     </div>
-    <div class="regular-font center">
-      <div>
-        Vikses Speseri og Kafe åpner i midten av juli!
+    <div class="cards">
+      <div class="regular-font center card one">
+        <div>
+          Vikses Spiseri og Kafe åpner i midten av juli!
+        </div>
       </div>
-    </div>
-    <div class="regular-font center">
-      <div>
-        Vi lager all maten på stedet, av gode, naturlige råvarer. Vi har digg og sunn mat, og rågod kaffe.
+      <div class="regular-font center card two">
+        <div>
+          Vi lager all maten på stedet, av gode, naturlige råvarer. Vi har digg og sunn mat, og rågod kaffe.
+        </div>
       </div>
-    </div>
-    <div class="regular-font center">
-      <div>
-        <div>Jobbe hos oss?</div><div>jobb@vikses.no</div>
+      <div class="regular-font center card three">
+        <div>
+          <div>Jobbe hos oss?</div><div>jobb@vikses.no</div>
+        </div>
       </div>
     </div>
   </body>
