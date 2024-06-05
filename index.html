@@ -17,6 +17,7 @@
         color: white;
         font-family: "Josefin Sans", sans-serif;
         position: relative;
+        background-color: #e4f7dc;
       }
 
       .regular-font {
@@ -46,10 +47,11 @@
 
       .cards {
         position: relative;
-        height: calc(var(--vh, 1vh) * 100 - 110px);
+        height: calc(var(--vh) * 100 - 110px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: white;
       }
 
       .card {
@@ -85,6 +87,7 @@
       }
 
       window.addEventListener('resize', setVH);
+      window.addEventListener('scroll', setVH);
 
       setVH();
     </script>
@@ -96,16 +99,16 @@
     </div>
     <div class="cards">
       <div>
-      <div class="regular-font center card one">
-        <div>
-          Vikses Spiseri og Kafe åpner i midten av juli!
+        <div class="regular-font center card one">
+          <div>
+            Vikses Spiseri og Kafe åpner i midten av juli!
+          </div>
         </div>
-      </div>
-      <div class="regular-font center card two">
-        <div>
-          Vi lager all maten på stedet, av gode, naturlige råvarer. Vi har digg og sunn mat, og rågod kaffe.
+        <div class="regular-font center card two">
+          <div>
+            Vi lager all maten på stedet, av gode, naturlige råvarer. Vi har digg og sunn mat, og rågod kaffe.
+          </div>
         </div>
-      </div>
       </div>
       <div class="regular-font center card three">
         <div>
